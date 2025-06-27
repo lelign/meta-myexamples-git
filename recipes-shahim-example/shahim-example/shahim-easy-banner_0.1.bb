@@ -5,9 +5,7 @@ LICENSE = "MIT"
 
 python do_display_banner() {
     bb.plain("***********************************************************");
-    bb.plain("*        hello from                                        *");
-    bb.plain("* ~/example_recipes/meta-myexamples/recipes-shahim-easy-ba *");
-    bb.plain("*                                                          *");
+    bb.plain("*        hello from shahim-easy-banner                     *");
     bb.plain("***********************************************************");
 }
 

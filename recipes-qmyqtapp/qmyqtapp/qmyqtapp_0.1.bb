@@ -1,9 +1,9 @@
 SUMMARY = "summary ign this is a test QT program"
 DESCRIPTION = "description ign this is a test QT program"
-#SECTION = "examples" don't need
+SECTION = "examples" 
 LICENSE = "CLOSED"
 
-#DEPENDS += " qtbase wayland "
+DEPENDS += " qtbase wayland "
 
 SRC_URI = "file://added-myQTApp.cpp \
 	   file://added-myQTApp.pro \
@@ -31,14 +31,13 @@ do_install:append () {
 	install -m 0775 added-myQTApp ${D}${bindir}/
 }
 
-FILES_${PN} +="${bindir}/added-myQTApp"
+FILES_${PN} +="${bindir}/qadded-myQTApp"
 
 inherit qmake5
 
 python do_display_banner() {
     bb.plain("*******************************************************");
-    bb.plain("*  meta-qt5/recipes-qt/myqtapp/added-myqtapp           *");
-    bb.plain("*          hello from myqtapp                         *");
+    bb.plain("*          hello from qmyqtapp                         *");
     bb.plain("*******************************************************");
 }
 

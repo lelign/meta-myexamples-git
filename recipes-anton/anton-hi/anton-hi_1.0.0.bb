@@ -30,9 +30,7 @@ do_install() {
 
 python do_display_banner() {
     bb.plain("***********************************************************");
-    bb.plain("*        hello from                                        *");
-    bb.plain("* ~/example_recipes/meta-myexamples/recipes-anton/anton-hi *");
-    bb.plain("*                                                          *");
+    bb.plain("*        hello from anton-hi                              *");
     bb.plain("***********************************************************");
 }
 

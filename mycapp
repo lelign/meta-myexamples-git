@@ -30,8 +30,8 @@ do_install () {
 
 python do_display_banner() {
     bb.plain("******************************************************");
-    bb.plain("*          hello from mycapp                         *");
+    bb.plain("*          hello from ignat  cp                      *");
     bb.plain("******************************************************");
 }
 
-addtask display_banner before do_package_qa
+addtask display_banner before do_build
